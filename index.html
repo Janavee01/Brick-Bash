@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brick Bash Game</title>
+    <link rel="stylesheet" href="brickbash.css">
+    <script defer src="brickbash.js"></script>
+</head>
+<body>
+    <header class="hello">
+        <img src="assets\download.png" alt="Game Logo" class="hi"> 
+        <span class="text">Brick Bash</span>
+    </header>
+
+    <div class="box">
+        <h1 id="h">Welcome to the Brick Bash Game!</h1>
+        <p id="para">Dive into the classic arcade-style gaming experience. Use the paddle to bounce the ball and break all the bricks to win!</p>
+        <button onclick="startGame()">Play Now</button>
+    </div>
+
+    <div class="container">
+        <div class="about-me">
+            <h2>About the Game</h2>
+            <p>Brick Bash is a classic arcade game where your goal is to destroy all the bricks on the screen by bouncing a ball off a paddle. Test your reflexes and aim to score high!</p>
+            <ul>
+                <li>Use the left and right arrow keys to control the paddle.</li>
+                <li>Break all the bricks to win the game.</li>
+                <li>You have 3 lives—don't let the ball fall!</li>
+            </ul>
+            <button onclick="startGame()">Start Playing</button>
+        </div>
+
+        <div class="features">
+            <h2>Game Features</h2>
+            <ul>
+                <li>Smooth gameplay with paddle and ball physics.</li>
+                <li>Dynamic ball gradient for a visually appealing design.</li>
+                <li>Brick collision detection to handle brick removal and score updates.</li>
+                <li>Lives counter: Players start with 3 lives and lose one when the ball hits the bottom.</li>
+                <li>Score tracking</li>
+                <li>Victory: Congratulatory message when all bricks are cleared.</li>
+                <li>Game Over: Displays the final score when lives are depleted.</li>
+                <li>Paddle movement using arrow keys for intuitive control.</li>
+            </ul>
+        </div>
+    </div>
+
+    <canvas id="canvas" width="1060" height="864"></canvas>
+    <footer class="footer">
+        <p>- Janavee V</p>
+    </footer>
+</body>
+</html>
